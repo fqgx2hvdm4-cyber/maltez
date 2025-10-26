@@ -1,0 +1,87 @@
+/* Базові стилі */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #111;
+  line-height: 1.6;
+}
+
+/* Верхній блок */
+.top-section {
+  background-color: #004b44; /* темно-зелений */
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.icon {
+  background-color: #eec6f0; /* світло-рожевий кружечок */
+  color: #333;
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  box-shadow: 0 0 0 6px rgba(0,0,0,0.02) inset;
+}
+
+.top-text {
+  flex: 1;
+  font-size: 15px;
+  max-width: 1100px;
+}
+
+/* Основна частина */
+.main {
+  display: flex;
+  align-items: flex-start;
+  padding: 18px 40px;
+  gap: 24px;
+  background-color: transparent;
+}
+
+.dog-photo {
+  width: 40%;
+  max-width: 420px;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  object-fit: cover;
+}
+
+.text-block {
+  background-color: #f6dff6; /* світло-ліловий (підкладка) */
+  padding: 18px;
+  border-radius: 6px;
+  font-size: 15px;
+  color: #222;
+  max-width: 700px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}
+
+/* Нижній текст */
+.bottom-text {
+  background-color: #004b44; /* темно-зелений */
+  color: white;
+  padding: 22px 40px;
+  font-size: 15px;
+  margin-top: 18px;
+}
+
+/* Адаптив */
+@media (max-width: 880px) {
+  .main {
+    flex-direction: column;
+    padding: 16px;
+  }
+  .dog-photo {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 12px;
+  }
+  .text-block { width: 100%; }
+}
